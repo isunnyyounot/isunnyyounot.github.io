@@ -71,7 +71,7 @@ hr{
 	letter-spacing: 1px;
 }
 #headerwrap{
-	background: url(https://img2.goodfon.ru/wallpaper/nbig/7/f0/sport-voleibol-miach-setka-sportsmeny-muzhchiny.jpg);
+	background-image: url(img/bg.jpg);
 	margin-top: -10px;
 	padding-top: 20px;
 	text-align: center;
@@ -113,23 +113,6 @@ hr{
 	font-size: 20px;
 }
 
-/*.team-item{
-	padding: 20px;
-}
-
-.team-item img{
-	width: 80%;
-}
-@media screen and (max-width: 767px){
-	.team-item img{
-		width: 60%;
-	}	
-}
-.description {
-	font: 15px/20px, sans-serif;
-	padding-bottom: 30px;
-}
-*/
 #team{
 	background: #e0e0e0;
 	padding-top: 50px;
