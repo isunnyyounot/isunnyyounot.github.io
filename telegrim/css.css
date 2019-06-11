@@ -1,0 +1,273 @@
+*{
+	font-family: 'Comfortaa', cursive;
+	box-sizing: border-box;
+}
+header{
+	height: 100px;
+	background: linear-gradient(to  right top, #004d00,  #009900);
+	position: fixed;
+	top:0;left:0;right:0;
+	z-index: 1;
+}
+#logo{
+	position: relative;
+	border: 0px solid black;
+	width: 450px;
+	height: 85px;
+	display: block;
+	margin-left: 0%;
+	animation: logo 1.5s linear;
+}
+@keyframes logo{
+	0%{transform: translate(-400px, 0px) skew(20deg, 0deg);}
+	70%{transform: translate(0px,0px) skew(0deg, 0deg);}
+	75%{transform: translate(40px,0px) skew(-15deg, 0deg);}
+}
+nav img{
+	display: none;
+	width: 75px;
+	position: absolute;
+	left: 17%;
+	z-index: 2;
+}
+nav{
+	display: block;
+	position: relative;
+	top: -76px;
+	left: 51.5%;
+}
+nav ul{
+	display: block;
+	width: auto;
+}
+ul li{
+	border: 3px solid #334d4d;
+	border-radius: 10px;
+	width: 100px;
+	height: 50px;
+    text-align: center;
+	display: inline-block;
+	background-color: #cccc00;
+}
+}
+li>a{
+	display: block;
+	height: 50px;
+	width: 100px;
+}
+#contact{
+	display: block;
+	position: absolute;
+	left: 78.5%;
+	top: 117px;
+	width: 290px;
+	box-shadow: 5px 2px 12px 10px black;
+}
+.contacts{
+	display: block;
+	width: 150px;
+	position: absolute;
+	top: 0px;
+	left: 89%;
+	height: inherit;
+	color: white;
+	font-size: 150%;
+	text-shadow: #ff8000 2px 4px 1.5px;
+	text-decoration: none;
+}
+#maps{
+	width: 70px;
+	position: relative;
+	left: 40px;
+}
+
+body{
+	margin-top: 100px;
+	background: url(images.background1.jpg);
+}
+.text{
+	position: relative;
+	margin: 0px;
+	padding-left: 10px;
+	padding-top: 0px;
+	width: 75.7%;
+	left: 1%;
+	top: 17px;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-family: 'Comfortaa', cursive;
+	height: 390px;
+}
+.slide-container{
+	width: 800px;
+	height: 300px;
+	position: relative;
+	top: 25px;
+	left: 8%;
+	border: 3px solid grey;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: center;
+}
+#image-container{
+	width: 2400px;
+	height: inherit;
+	position: relative;
+	transition: left 2s;
+}
+.image-container>img{
+	width: 800px;
+	height: 300px;
+}
+
+.slider-image{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+
+}
+.button-container{
+	position: relative;
+	top: -22px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev{
+	left: 0;
+	border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media(max-width: 970px){
+	nav img{
+		display: block;
+	}
+	nav ul{
+		width: 175px;
+		display: none;
+		background: black;
+		opacity: 0.8;
+		position: absolute;
+		top: 75px;
+		left: 117px;
+	}
+	nav ul li{
+		height: auto;
+	}
+	nav:hover ul{
+		display: block;
+	}
+	nav:hover li{
+		display: block;
+	}
+}
+@media(max-width: 600px){
+	header{
+		height: 200px;
+	}
+	body{
+		margin-top: 200px;
+	}
+	#logo{
+		position: absolute;
+		left: 26%;
+	}
+	.text{
+	position: relative;
+	margin: 0px;
+	padding-left: 10px;
+	padding-top: 0px;
+	width: 90%;
+	left: 1%;
+	top: 17px;
+	}
+	.contacts{
+		position: absolute;
+		left: 80%;
+		top: 47%;
+	}
+	#contact{
+		display: none;
+		top: 100%;
+	}
+	nav{
+		top: 55%;
+		left: 10%;
+	}
+	nav img{
+		display: none;
+	}
+	nav ul{
+		display: block;
+		width: auto;
+		opacity: 1;
+		background-color: transparent;
+		position: static;
+	}
+	nav ul li{
+		height: 50px;
+		display: inline-block;
+	}
+	nav:hover ul{
+		display: block;
+	}
+	nav:hover li{
+		display: inline-block;
+	}
+}
